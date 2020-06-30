@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bwg-A8-w6B">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--属性传递代理回传-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DelegateViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B0S-EF-M0W">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xda-nN-l9y">
+                                <rect key="frame" x="161" y="433" width="92" height="30"/>
+                                <state key="normal" title="跳转到子页面"/>
+                                <connections>
+                                    <action selector="toSubView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5d-SR-AL2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B0S-EF-M0W" secondAttribute="trailing" constant="150" id="7la-na-Knk"/>
+                            <constraint firstItem="Xda-nN-l9y" firstAttribute="top" relation="lessThanOrEqual" secondItem="B0S-EF-M0W" secondAttribute="bottom" constant="269" id="9FU-UR-GvZ"/>
+                            <constraint firstItem="B0S-EF-M0W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="9S4-EI-gdt"/>
+                            <constraint firstItem="B0S-EF-M0W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="YCr-wz-6va"/>
+                            <constraint firstItem="Xda-nN-l9y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dkz-Qe-NbS"/>
+                            <constraint firstItem="Xda-nN-l9y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uys-7Y-UKE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="属性传递代理回传" id="h3V-iC-C9w"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="B0S-EF-M0W" id="WnX-Ot-Lf6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="139"/>
+        </scene>
+        <!--子页面-->
+        <scene sceneID="N2d-hW-Mqt">
+            <objects>
+                <viewController storyboardIdentifier="DelegateSubViewController" id="CdN-eS-WOM" customClass="DelegateSubViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qex-Ix-ogt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-D6-9Dm">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="返回上一级"/>
+                                <connections>
+                                    <action selector="back:" destination="CdN-eS-WOM" eventType="touchUpInside" id="QKd-ph-1Wt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLc-Ok-qKE">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P2b-D6-9Dm" firstAttribute="top" relation="lessThanOrEqual" secondItem="eLc-Ok-qKE" secondAttribute="bottom" constant="275" id="BP9-S3-eVN"/>
+                            <constraint firstItem="P2b-D6-9Dm" firstAttribute="centerX" secondItem="Qex-Ix-ogt" secondAttribute="centerX" id="Bk8-u4-7LM"/>
+                            <constraint firstItem="wZT-tF-nEA" firstAttribute="trailing" secondItem="eLc-Ok-qKE" secondAttribute="trailing" constant="150" id="EPS-kQ-n5x"/>
+                            <constraint firstItem="P2b-D6-9Dm" firstAttribute="centerY" secondItem="Qex-Ix-ogt" secondAttribute="centerY" id="IkG-AT-sfc"/>
+                            <constraint firstItem="eLc-Ok-qKE" firstAttribute="leading" secondItem="wZT-tF-nEA" secondAttribute="leading" constant="150" id="TXk-tP-7ld"/>
+                            <constraint firstItem="eLc-Ok-qKE" firstAttribute="top" secondItem="wZT-tF-nEA" secondAttribute="top" constant="50" id="W5K-5l-1rH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wZT-tF-nEA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="子页面" id="EdP-QH-7eA"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="eLc-Ok-qKE" id="KP6-Ag-xhx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6f-iG-E1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2459" y="139"/>
+        </scene>
+        <!--Sub View Controller-->
+        <scene sceneID="B46-Iw-VJ6">
+            <objects>
+                <viewController storyboardIdentifier="NKVOSubViewController" id="WZR-Pm-vew" customClass="NKVOSubViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LvG-K0-4BA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFz-5H-aKQ">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="返回上一级"/>
+                                <connections>
+                                    <action selector="back:" destination="WZR-Pm-vew" eventType="touchUpInside" id="XbO-Dx-iGg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIv-wd-I8S">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MIv-wd-I8S" firstAttribute="leading" secondItem="vAn-iB-9yF" secondAttribute="leading" constant="150" id="3yd-9j-C4Q"/>
+                            <constraint firstItem="nFz-5H-aKQ" firstAttribute="centerX" secondItem="LvG-K0-4BA" secondAttribute="centerX" id="Xd5-GR-8YS"/>
+                            <constraint firstItem="vAn-iB-9yF" firstAttribute="trailing" secondItem="MIv-wd-I8S" secondAttribute="trailing" constant="150" id="b0V-ha-hvg"/>
+                            <constraint firstItem="nFz-5H-aKQ" firstAttribute="centerY" secondItem="LvG-K0-4BA" secondAttribute="centerY" id="q0k-Sp-Ko8"/>
+                            <constraint firstItem="MIv-wd-I8S" firstAttribute="top" secondItem="vAn-iB-9yF" secondAttribute="top" constant="50" id="tsg-oQ-TTn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vAn-iB-9yF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7eb-AN-EAE"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="MIv-wd-I8S" id="xLw-Uj-3OX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajW-pP-QoU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="2277"/>
+        </scene>
+        <!--Notifiction Sub View Controller-->
+        <scene sceneID="UwF-tE-Vr4">
+            <objects>
+                <viewController id="abw-aj-uCB" customClass="NotifictionSubViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNb-Ix-EId">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omR-qC-cEm">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgg-ZG-Grk">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="返回上一级"/>
+                                <connections>
+                                    <action selector="back:" destination="abw-aj-uCB" eventType="touchUpInside" id="6V9-64-i5J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="omR-qC-cEm" firstAttribute="leading" secondItem="ZQt-td-Yd6" secondAttribute="leading" constant="150" id="Ig4-Ya-r0V"/>
+                            <constraint firstItem="omR-qC-cEm" firstAttribute="top" secondItem="ZQt-td-Yd6" secondAttribute="top" constant="50" id="MVD-Wa-0oD"/>
+                            <constraint firstItem="zgg-ZG-Grk" firstAttribute="centerY" secondItem="gNb-Ix-EId" secondAttribute="centerY" id="kCR-0g-77x"/>
+                            <constraint firstItem="ZQt-td-Yd6" firstAttribute="trailing" secondItem="omR-qC-cEm" secondAttribute="trailing" constant="150" id="rmu-pn-Ui5"/>
+                            <constraint firstItem="zgg-ZG-Grk" firstAttribute="centerX" secondItem="gNb-Ix-EId" secondAttribute="centerX" id="vOj-5O-rV7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZQt-td-Yd6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tk7-JD-6sd"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="omR-qC-cEm" id="4aB-Nb-SZ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ElX-fh-jdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029" y="2290"/>
+        </scene>
+        <!--子页面-->
+        <scene sceneID="rJu-43-Kz7">
+            <objects>
+                <viewController storyboardIdentifier="KVOSubViewController" id="cOl-IE-tW2" customClass="KVOSubViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pEF-Zc-nzc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LC-kd-YeG">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="返回上一级"/>
+                                <connections>
+                                    <action selector="back:" destination="cOl-IE-tW2" eventType="touchUpInside" id="SNm-an-YE8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASM-qh-h99">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6f5-pb-wCf" firstAttribute="trailing" secondItem="ASM-qh-h99" secondAttribute="trailing" constant="150" id="IK1-Ct-tip"/>
+                            <constraint firstItem="ASM-qh-h99" firstAttribute="leading" secondItem="6f5-pb-wCf" secondAttribute="leading" constant="150" id="Ji9-TG-KmM"/>
+                            <constraint firstItem="6LC-kd-YeG" firstAttribute="centerY" secondItem="pEF-Zc-nzc" secondAttribute="centerY" id="Vwm-tZ-WGf"/>
+                            <constraint firstItem="6LC-kd-YeG" firstAttribute="centerX" secondItem="pEF-Zc-nzc" secondAttribute="centerX" id="aYs-vP-0wj"/>
+                            <constraint firstItem="ASM-qh-h99" firstAttribute="top" secondItem="6f5-pb-wCf" secondAttribute="top" constant="50" id="qUw-xh-Vh1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6f5-pb-wCf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="子页面" id="wMQ-42-NTY"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="ASM-qh-h99" id="KPD-bt-NtE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wd5-rf-PTX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="2277"/>
+        </scene>
+        <!--子页面-->
+        <scene sceneID="bhP-Hz-mks">
+            <objects>
+                <viewController storyboardIdentifier="ClosureSubViewController" id="Dt4-YW-Ou8" customClass="ClosureSubViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BkF-i1-OXh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92i-fq-PGn">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="返回上一级"/>
+                                <connections>
+                                    <action selector="back:" destination="Dt4-YW-Ou8" eventType="touchUpInside" id="7y8-mb-nZB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zob-UT-h4g">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="92i-fq-PGn" firstAttribute="centerX" secondItem="BkF-i1-OXh" secondAttribute="centerX" id="19E-p9-eiL"/>
+                            <constraint firstItem="92i-fq-PGn" firstAttribute="centerY" secondItem="BkF-i1-OXh" secondAttribute="centerY" id="Ax8-sq-akY"/>
+                            <constraint firstItem="zob-UT-h4g" firstAttribute="leading" secondItem="VZo-3E-V8A" secondAttribute="leading" constant="150" id="J7P-Oi-1dc"/>
+                            <constraint firstItem="zob-UT-h4g" firstAttribute="top" secondItem="VZo-3E-V8A" secondAttribute="top" constant="50" id="Jn3-pS-HuA"/>
+                            <constraint firstItem="VZo-3E-V8A" firstAttribute="trailing" secondItem="zob-UT-h4g" secondAttribute="trailing" constant="150" id="kZb-5R-rZE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VZo-3E-V8A"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="子页面" id="Ajl-Mb-jEF"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="zob-UT-h4g" id="qbo-hl-yhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ql0-K9-7WT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949" y="2277"/>
+        </scene>
+        <!--属性传递代理回传-->
+        <scene sceneID="EOC-Qs-ouv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jt7-jX-hjy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="属性传递代理回传" image="d.square.fill" catalog="system" id="TNx-la-Pcf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PVs-BI-Gc1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="g55-Ql-0KX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bx-TS-eFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="K98-d1-MIh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bwg-A8-w6B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9jg-hU-xs5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jt7-jX-hjy" kind="relationship" relationship="viewControllers" id="jNQ-em-AAe"/>
+                        <segue destination="ogg-vI-0qn" kind="relationship" relationship="viewControllers" id="0It-WP-NYq"/>
+                        <segue destination="uRE-Y0-Dn6" kind="relationship" relationship="viewControllers" id="6G1-6N-1tm"/>
+                        <segue destination="SOQ-J2-zsl" kind="relationship" relationship="viewControllers" id="WcZ-r5-huo"/>
+                        <segue destination="ZUW-DH-BGe" kind="relationship" relationship="viewControllers" id="0Ne-Q2-PBc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNc-aY-rEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--闭包回传-->
+        <scene sceneID="FTh-tD-r8Z">
+            <objects>
+                <viewController id="6y6-rw-YdZ" customClass="ClosureViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Grv-qj-1Am">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Jn-Xp-AJf">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKO-cy-gky">
+                                <rect key="frame" x="161" y="433" width="92" height="30"/>
+                                <state key="normal" title="跳转到子页面"/>
+                                <connections>
+                                    <action selector="toSubView:" destination="6y6-rw-YdZ" eventType="touchUpInside" id="3Dg-E9-i0m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Jn-Xp-AJf" firstAttribute="top" secondItem="9iF-Aa-uZK" secondAttribute="top" constant="50" id="0Qi-si-U8v"/>
+                            <constraint firstItem="9iF-Aa-uZK" firstAttribute="trailing" secondItem="2Jn-Xp-AJf" secondAttribute="trailing" constant="150" id="3ku-EO-YhF"/>
+                            <constraint firstItem="2Jn-Xp-AJf" firstAttribute="leading" secondItem="9iF-Aa-uZK" secondAttribute="leading" constant="150" id="8bc-zD-N4P"/>
+                            <constraint firstItem="QKO-cy-gky" firstAttribute="centerY" secondItem="Grv-qj-1Am" secondAttribute="centerY" id="Pdp-Sw-A1z"/>
+                            <constraint firstItem="QKO-cy-gky" firstAttribute="centerX" secondItem="Grv-qj-1Am" secondAttribute="centerX" id="cdZ-sM-dyZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9iF-Aa-uZK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="闭包回传" id="eHK-eU-2Ap"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="2Jn-Xp-AJf" id="1qC-93-ZLz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aC1-M9-nui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949" y="1610"/>
+        </scene>
+        <!--无需释放观察者的KVO-->
+        <scene sceneID="cad-8o-kkR">
+            <objects>
+                <viewController id="Lgr-8D-mJT" customClass="NKVOViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ej8-vb-dzD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJp-NC-Hcg">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yij-Gt-1gW">
+                                <rect key="frame" x="161" y="433" width="92" height="30"/>
+                                <state key="normal" title="跳转到子页面"/>
+                                <connections>
+                                    <segue destination="WZR-Pm-vew" kind="show" identifier="NKVOViewController" id="ING-ME-cOW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yij-Gt-1gW" firstAttribute="centerY" secondItem="Ej8-vb-dzD" secondAttribute="centerY" id="7G6-cC-6X6"/>
+                            <constraint firstItem="yij-Gt-1gW" firstAttribute="centerX" secondItem="Ej8-vb-dzD" secondAttribute="centerX" id="G6V-fp-0l1"/>
+                            <constraint firstItem="dJp-NC-Hcg" firstAttribute="top" secondItem="vlB-9d-whE" secondAttribute="top" constant="50" id="Sbv-KG-Sc6"/>
+                            <constraint firstItem="vlB-9d-whE" firstAttribute="trailing" secondItem="dJp-NC-Hcg" secondAttribute="trailing" constant="150" id="mbW-86-xD5"/>
+                            <constraint firstItem="dJp-NC-Hcg" firstAttribute="leading" secondItem="vlB-9d-whE" secondAttribute="leading" constant="150" id="ySR-8j-NOg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vlB-9d-whE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="无需释放观察者的KVO" id="h9j-rn-eGA"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="dJp-NC-Hcg" id="pB0-XZ-yyK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcE-7t-abc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="1610"/>
+        </scene>
+        <!--KVO传值-->
+        <scene sceneID="xap-xX-Bgc">
+            <objects>
+                <viewController id="Lqh-qS-qiQ" customClass="KVOViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ae-e6-Hqh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufN-Yn-Tiu">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KU2-AC-0BA">
+                                <rect key="frame" x="161" y="433" width="92" height="30"/>
+                                <state key="normal" title="跳转到子页面"/>
+                                <connections>
+                                    <segue destination="cOl-IE-tW2" kind="show" id="cB9-zD-xE2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KU2-AC-0BA" firstAttribute="centerY" secondItem="9Ae-e6-Hqh" secondAttribute="centerY" id="2JS-hJ-cmO"/>
+                            <constraint firstItem="ufN-Yn-Tiu" firstAttribute="leading" secondItem="6dr-n0-dLu" secondAttribute="leading" constant="150" id="NHi-cf-4dh"/>
+                            <constraint firstItem="ufN-Yn-Tiu" firstAttribute="top" secondItem="6dr-n0-dLu" secondAttribute="top" constant="50" id="S8X-dL-JCz"/>
+                            <constraint firstItem="KU2-AC-0BA" firstAttribute="centerX" secondItem="9Ae-e6-Hqh" secondAttribute="centerX" id="VUL-AS-T7T"/>
+                            <constraint firstItem="6dr-n0-dLu" firstAttribute="trailing" secondItem="ufN-Yn-Tiu" secondAttribute="trailing" constant="150" id="hlZ-wc-VAM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6dr-n0-dLu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KVO传值" id="uJ6-6j-Wve"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="ufN-Yn-Tiu" id="epp-OW-pqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrS-JR-Mgr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="1610"/>
+        </scene>
+        <!--闭包回传-->
+        <scene sceneID="bQA-Qz-jhI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ogg-vI-0qn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="闭包回传" image="repeat" catalog="system" id="K4h-pF-UOy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9s5-ch-fsE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6y6-rw-YdZ" kind="relationship" relationship="rootViewController" id="Nlx-wY-riz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZx-F1-iby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949" y="901"/>
+        </scene>
+        <!--无需释放观察者的KVO-->
+        <scene sceneID="w6h-X1-pdT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SOQ-J2-zsl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="无需释放观察者的KVO" image="1.magnifyingglass" catalog="system" id="Ks6-Os-rfc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Duf-0d-gsz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lgr-8D-mJT" kind="relationship" relationship="rootViewController" id="Q1e-fr-20E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ac9-pp-C7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="901"/>
+        </scene>
+        <!--通知中心-->
+        <scene sceneID="PT0-7z-nlg">
+            <objects>
+                <viewController id="fgK-Hx-CfL" customClass="NotifictionViewController" customModule="PageValueDeliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a2v-IX-E7B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pw-I8-jzU">
+                                <rect key="frame" x="150" y="138" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25E-7p-nFE">
+                                <rect key="frame" x="161" y="433" width="92" height="30"/>
+                                <state key="normal" title="跳转到子页面"/>
+                                <connections>
+                                    <segue destination="abw-aj-uCB" kind="show" identifier="NotifictionViewController" id="xwo-aE-xbj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="25E-7p-nFE" firstAttribute="centerY" secondItem="a2v-IX-E7B" secondAttribute="centerY" id="IjV-g0-qdU"/>
+                            <constraint firstItem="3pw-I8-jzU" firstAttribute="leading" secondItem="8tK-m3-jhE" secondAttribute="leading" constant="150" id="Tgv-FL-CuJ"/>
+                            <constraint firstItem="25E-7p-nFE" firstAttribute="centerX" secondItem="a2v-IX-E7B" secondAttribute="centerX" id="UnJ-di-8lQ"/>
+                            <constraint firstItem="8tK-m3-jhE" firstAttribute="trailing" secondItem="3pw-I8-jzU" secondAttribute="trailing" constant="150" id="Zr3-rM-lLq"/>
+                            <constraint firstItem="3pw-I8-jzU" firstAttribute="top" secondItem="8tK-m3-jhE" secondAttribute="top" constant="50" id="mWM-rw-JUo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8tK-m3-jhE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="通知中心" id="Tnb-ag-cGz"/>
+                    <connections>
+                        <outlet property="valueTextField" destination="3pw-I8-jzU" id="3J7-in-y5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hH-Zk-x3u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029" y="1610"/>
+        </scene>
+        <!--KVO传值-->
+        <scene sceneID="6Np-wk-C2V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRE-Y0-Dn6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="KVO传值" image="plus.magnifyingglass" catalog="system" id="0cp-1Q-NhK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XoA-zd-KJj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lqh-qS-qiQ" kind="relationship" relationship="rootViewController" id="Reb-pv-LXS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdj-7b-ayI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="902"/>
+        </scene>
+        <!--通知中心-->
+        <scene sceneID="NSG-Bw-qDZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZUW-DH-BGe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="通知中心" image="speaker.zzz.fill" catalog="system" id="fEf-ZI-aPk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vE7-Ac-pFR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fgK-Hx-CfL" kind="relationship" relationship="rootViewController" id="pYI-GS-znd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtt-It-oFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028.985507246377" y="900.66964285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="d.square.fill" catalog="system" width="128" height="114"/>
+        <image name="plus.magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="repeat" catalog="system" width="128" height="99"/>
+        <image name="speaker.zzz.fill" catalog="system" width="128" height="91"/>
+    </resources>
+</document>

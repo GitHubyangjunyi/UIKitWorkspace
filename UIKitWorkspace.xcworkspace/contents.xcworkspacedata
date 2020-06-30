@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Anchor/Anchor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LayersGradient/LayersGradient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LayersCircle/LayersCircle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIKitInitPatterns/UIKitInitPatterns.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FrameBounds/FrameBounds.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XibCustomViewWithOutletsAndActionsCleanExtension/XibCustomViewWithOutletsAndActionsCleanExtension.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XibCustomViewWithOutletsAndActionsClean/XibCustomViewWithOutletsAndActionsClean.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XibCustomViewWithOutletsAndActions/XibCustomViewWithOutletsAndActions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BundleCreate/BundleCreate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StoryboardModule/StoryboardModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DelegatePattern/DelegatePattern.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UISplitViewController/UISplitViewController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PageValueDeliver/PageValueDeliver.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XibNest/XibNest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIViewControllerXib/UIViewControllerXib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XibDALFactory/XibDALFactory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SeparateUIAndLogic/SeparateUIAndLogic.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:LaunchScreen/LaunchScreen.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UICollectionViewStoryboard/UICollectionViewStoryboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITableViewStoryboardStaticCellKeyPath/UITableViewStoryboardStaticCellKeyPath.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITableViewStoryboardStaticCell/UITableViewStoryboardStaticCell.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITableViewPureCode/UITableViewPureCode.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITableViewStoryboard/UITableViewStoryboard.xcodeproj">
+   </FileRef>
+</Workspace>

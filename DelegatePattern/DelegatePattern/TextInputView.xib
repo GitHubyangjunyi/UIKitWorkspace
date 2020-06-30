@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CYw-lT-mz7" customClass="TextInputView" customModule="DelegatePattern" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvW-ld-bpX">
+                    <rect key="frame" x="171.5" y="5" width="32" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCp-WF-0Or">
+                    <rect key="frame" x="313" y="7" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="confirmButtonPressed:" destination="CYw-lT-mz7" eventType="touchUpInside" id="Uh3-FW-epF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="UAE-wQ-aD6" firstAttribute="trailing" secondItem="fCp-WF-0Or" secondAttribute="trailing" constant="16" id="0cQ-vz-mkI"/>
+                <constraint firstItem="NvW-ld-bpX" firstAttribute="centerY" secondItem="CYw-lT-mz7" secondAttribute="centerY" id="1hv-vO-teQ"/>
+                <constraint firstItem="fCp-WF-0Or" firstAttribute="top" secondItem="UAE-wQ-aD6" secondAttribute="top" constant="7" id="FOE-hw-e0o"/>
+                <constraint firstItem="fCp-WF-0Or" firstAttribute="leading" relation="lessThanOrEqual" secondItem="NvW-ld-bpX" secondAttribute="trailing" constant="109.5" id="Lnk-nD-OeC"/>
+                <constraint firstItem="NvW-ld-bpX" firstAttribute="centerX" secondItem="CYw-lT-mz7" secondAttribute="centerX" id="omf-vc-D9S"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="UAE-wQ-aD6"/>
+            <connections>
+                <outlet property="inputTextField" destination="NvW-ld-bpX" id="4Hb-Rc-U4B"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="75"/>
+        </view>
+    </objects>
+</document>
