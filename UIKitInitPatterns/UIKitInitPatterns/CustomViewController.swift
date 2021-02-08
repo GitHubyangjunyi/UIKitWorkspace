@@ -9,13 +9,13 @@ import UIKit
 
 class CustomViewController: UIViewController {
 
-    //外部xib初始化
+    //外部xib初始化需要重写这个方法
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.initialize()
     }
     
-    //Storyboard初始化
+    //Storyboard初始化需要重写这个方法
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.initialize()

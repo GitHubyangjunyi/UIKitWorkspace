@@ -21,7 +21,7 @@ class UserLevelView: UIView {
         super.awakeFromNib()
         label.text = "Xib"
     }
-    //3.依据frame绘制
+    //依据frame绘制
     override init(frame: CGRect) {
         super.init(frame: frame)
         if label == nil {
@@ -38,5 +38,6 @@ class UserLevelView: UIView {
 //override func awakeFromNib()
 //
 //
-//如果使用代码方式使用则调用顺序是
+//如果使用代码初始化方式let viewx = UserLevelView()使用则调用顺序是
 //override init(frame: CGRect)
+//这个方法必须实现用来配置本来要使用xib实现的

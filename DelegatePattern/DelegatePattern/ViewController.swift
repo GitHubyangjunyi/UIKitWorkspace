@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 王巍的博客
 public class Delegate<Input, Output> {
     public init() {}
     

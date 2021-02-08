@@ -31,6 +31,7 @@ class ToolBar: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("\(type(of: self))     awakeFromNib")//有几个独立的xib就会被调用几次,这是个大坑
         handleEvent()
     }
     
@@ -39,12 +40,14 @@ class ToolBar: UIView {
 
 class NormalToolBar: ToolBar {
     override func handleEvent() {
+        print("NormalToolBar handleEvent")
         backgroundColor = .red
     }
 }
 
 class EditToolBar: ToolBar {
     override func handleEvent() {
+        print("EditToolBar handleEvent")
         backgroundColor = .green
     }
 }

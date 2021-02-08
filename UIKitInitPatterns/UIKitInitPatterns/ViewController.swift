@@ -54,7 +54,7 @@ extension UIView {
         self.translatesAutoresizingMaskIntoConstraints = !autolayout
     }
 
-    public static func create(autolayout: Bool = true) -> Self {
+    public static func create(autolayout: Bool = true) -> Self {//所有的子类都可以用
         let _self = self.init()
         let view  = _self as UIView
         view.translatesAutoresizingMaskIntoConstraints = !autolayout

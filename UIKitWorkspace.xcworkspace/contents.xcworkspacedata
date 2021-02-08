@@ -2,7 +2,55 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HitTest/HitTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Router/Router.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PhotoKit/PhotoKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Demos-LanguageSettingsDemo-master/LanguageSettingsDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ScreenAdaptation/ScreenAdaptation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Autorotate/Autorotate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutorotateSelfSizingCircularCell/AutorotateSelfSizingCircularCell.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StoryboardReferences/StoryboardReferences.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CallAutoLayout/CallAutoLayout.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Transition/Transition.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SelfSizingCell/SelfSizingCell.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UICollectionViewMVVMTheDevSwift/UICollectionViewMVVMTheDevSwift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AccessibilityIdentifier/AccessibilityIdentifier.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Anchor/Anchor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIImagePickerControllerCustom/UIImagePickerControllerCustom.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StylingBySubclassing/StylingBySubclassing.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIColorExtension/UIColorExtension.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LayersGradient/LayersGradient.xcodeproj">

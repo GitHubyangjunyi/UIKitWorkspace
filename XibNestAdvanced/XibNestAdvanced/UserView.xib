@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="77c-zs-94z" customClass="UserView" customModule="XibNestAdvanced" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocz-wR-2Hi">
+                    <rect key="frame" x="186" y="114.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEy-vb-0dd" customClass="LevelView" customModule="XibNestAdvanced" customModuleProvider="target">
+                    <rect key="frame" x="264" y="0.0" width="150" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT6-fr-D5N">
+                            <rect key="frame" x="54" y="39.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstItem="bT6-fr-D5N" firstAttribute="centerY" secondItem="dEy-vb-0dd" secondAttribute="centerY" id="TLu-Gv-moR"/>
+                        <constraint firstItem="bT6-fr-D5N" firstAttribute="centerX" secondItem="dEy-vb-0dd" secondAttribute="centerX" id="VX4-QT-bT6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vS7-w4-or2"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ocz-wR-2Hi" firstAttribute="centerX" secondItem="77c-zs-94z" secondAttribute="centerX" id="IbT-o4-Pny"/>
+                <constraint firstItem="Ocz-wR-2Hi" firstAttribute="centerY" secondItem="77c-zs-94z" secondAttribute="centerY" id="M1W-WH-fMC"/>
+                <constraint firstItem="dEy-vb-0dd" firstAttribute="top" secondItem="77c-zs-94z" secondAttribute="top" id="fne-kv-t7L"/>
+                <constraint firstItem="dEy-vb-0dd" firstAttribute="leading" secondItem="vS7-w4-or2" secondAttribute="leading" constant="264" id="ieD-Fa-naw"/>
+                <constraint firstItem="dEy-vb-0dd" firstAttribute="trailing" secondItem="vS7-w4-or2" secondAttribute="trailing" id="kVG-yd-SBb"/>
+                <constraint firstItem="vS7-w4-or2" firstAttribute="bottom" secondItem="dEy-vb-0dd" secondAttribute="bottom" constant="150" id="zSI-up-P47"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="levelLabel" destination="Ocz-wR-2Hi" id="PwI-Sa-M3v"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="53.571428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

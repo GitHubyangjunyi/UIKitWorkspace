@@ -20,5 +20,24 @@ class UserView: UIView {
         userLevelView.backgroundColor = .gray
         self.addSubview(userLevelView)
     }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        //1.加载xib的方式使用
+        let userLevelView = Bundle.main.loadNibNamed("UserLevelView", owner: nil, options: nil)?[0] as! UserLevelView
+        //2.代码初始化的方式使用
+        //let userLevelView = UserLevelView()
+        userLevelView.frame = CGRect.init(x: 260, y: 30, width: 100, height: 40)
+        userLevelView.backgroundColor = .gray
+        self.addSubview(userLevelView)
+        
+        
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 
 }

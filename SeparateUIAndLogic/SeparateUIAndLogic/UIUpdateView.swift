@@ -16,4 +16,9 @@ class UIUpdateView: UIView {
         self.uiBtn.setTitle("已经按过", for: .normal)
     }
     
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+        print("awakeFromNib")
+    }
+    
 }

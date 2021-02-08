@@ -13,12 +13,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userView = Bundle.main.loadNibNamed("UserView", owner: nil, options: nil)?[0] as! UserView
+        //1.测试userView使用xib加载
+//        
+//        let userView = Bundle.main.loadNibNamed("UserView", owner: nil, options: nil)?[0] as! UserView
+//        userView.frame = CGRect.init(x: 10, y: 10, width: UIScreen.main.bounds.size.width - 10, height: 200)
+//        userView.backgroundColor = .green
+//        self.view.addSubview(userView)
+//
+        //1.测试userView使用xib加载
+        
+        //2.测试userView使用不使用xib加载
+        let userView = UserView.init()
         userView.frame = CGRect.init(x: 10, y: 10, width: UIScreen.main.bounds.size.width - 10, height: 200)
         userView.backgroundColor = .green
         self.view.addSubview(userView)
-        
-        
+        //2.测试userView使用不使用xib加载
         
         let userLevelView = UserLevelView()
         userLevelView.frame = CGRect.init(x: 10, y: 300, width: 50, height: 50)

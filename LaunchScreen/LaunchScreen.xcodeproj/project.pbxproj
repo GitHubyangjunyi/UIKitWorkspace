@@ -14,6 +14,16 @@
 		1C4FEB0924A0BB4600D6C96E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FEB0724A0BB4600D6C96E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1CEA0CE224AB61A4006C4C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C4FEB3024A0CB8700D6C96E /* LaunchScreenEvolution.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C4FEB1924A0CB8500D6C96E;
+			remoteInfo = LaunchScreenEvolution;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1C4FEAF924A0BB4400D6C96E /* LaunchScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4FEAFC24A0BB4400D6C96E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +76,14 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		1CEA0CDF24AB61A4006C4C13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CEA0CE324AB61A4006C4C13 /* LaunchScreenEvolution.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,12 +130,28 @@
 			mainGroup = 1C4FEAF024A0BB4400D6C96E;
 			productRefGroup = 1C4FEAFA24A0BB4400D6C96E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1CEA0CDF24AB61A4006C4C13 /* Products */;
+					ProjectRef = 1C4FEB3024A0CB8700D6C96E /* LaunchScreenEvolution.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1C4FEAF824A0BB4400D6C96E /* LaunchScreen */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1CEA0CE324AB61A4006C4C13 /* LaunchScreenEvolution.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LaunchScreenEvolution.app;
+			remoteRef = 1CEA0CE224AB61A4006C4C13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1C4FEAF724A0BB4400D6C96E /* Resources */ = {

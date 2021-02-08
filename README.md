@@ -7,6 +7,8 @@
 
 Anchor
     自动布局的锚点约束与动画
+CallAutoLayout
+    使用AutoLayout布局电话界面
 
 
 FrameBounds
@@ -24,7 +26,8 @@ LaunchScreen    启动页面
     LaunchScreenEvolution
         使用LaunchScreen.storyboard
 
-
+GuidePage
+    引导页
 
 
 SeparateUIAndLogic
@@ -34,9 +37,8 @@ SeparateUIAndLogic
 StoryboardModule
     使用Storyboard分组业务模块
 
-
-
-
+StoryboardReferences
+    故事版引用
 
 
 PageValueDeliver
@@ -65,18 +67,8 @@ UIViewControllerXib
 
 
 
-
 BundleCreate
     创建并使用Bundle
-
-
-
-
-
-
-
-
-
 
 
 
@@ -91,12 +83,60 @@ UITableViewPureCode
 
 
 
-
 UICollectionViewStoryboard
     在Storyboard中使用集合视图
+    
+
+PhotoKit
 
 
+
+
+Router
+    路由
+
+ScreenAdaptation
+    屏幕适配
+
+
+
+
+LanguageSettingsDemo
+    语言动态切换
+
+
+
+Autorotate
+    自动旋转支持
+SelfSizingCell
+    自适应单元格
+AutorotateSelfSizingCircularCell
+    自动旋转支持的自适应圆形单元格
+
+UICollectionViewMVVMTheDevSwift
+    简单MVVM模式的集合视图
 
 
 UISplitViewController
     分栏视图控制器
+
+
+
+UIImagePickerControllerCustom
+    自定义图像选择器
+
+
+
+StylingBySubclassing
+    自定义子类样式
+
+UIColorExtension
+    颜色扩展
+
+Transition
+    自定义过渡动画
+
+
+AccessibilityIdentifier
+    唯一标识视图以及可访问性
+
