@@ -80,7 +80,8 @@ UITableViewStoryboard
     在Storyboard中使用表格视图并使用拖入Cell的方式使用Cell
 UITableViewPureCode
     纯代码使用表格视图
-
+UITableViewCellExpand
+    模拟点击展开的cell
 
 
 UICollectionViewStoryboard
@@ -99,7 +100,8 @@ ScreenAdaptation
     屏幕适配
 
 
-
+LocalizedString
+    本地化字符串
 
 LanguageSettingsDemo
     语言动态切换
@@ -140,3 +142,11 @@ Transition
 AccessibilityIdentifier
     唯一标识视图以及可访问性
 
+
+
+
+UISearchController
+
+
+BuildConfiguration
+    多构建配置

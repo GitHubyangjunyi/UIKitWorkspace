@@ -16,7 +16,32 @@
 		1CEA0CB424AB3029006C4C13 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA0CB324AB3029006C4C13 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1C86BADB26F2167200FAA55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C86BAD526F2167000FAA55F /* UIButtonCAGradientLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C86BAA226F2166F00FAA55F;
+			remoteInfo = UIButtonCAGradientLayer;
+		};
+		1C86BADD26F2167200FAA55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C86BAD526F2167000FAA55F /* UIButtonCAGradientLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C86BAB826F2167000FAA55F;
+			remoteInfo = UIButtonCAGradientLayerTests;
+		};
+		1C86BADF26F2167200FAA55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C86BAD526F2167000FAA55F /* UIButtonCAGradientLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C86BAC326F2167000FAA55F;
+			remoteInfo = UIButtonCAGradientLayerUITests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1C86BAD526F2167000FAA55F /* UIButtonCAGradientLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIButtonCAGradientLayer.xcodeproj; path = ../../UIButtonCAGradientLayer/UIButtonCAGradientLayer.xcodeproj; sourceTree = "<group>"; };
 		1CEA0C9C24AB3019006C4C13 /* LayersGradient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayersGradient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEA0C9F24AB3019006C4C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CEA0CA124AB3019006C4C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C86BAD626F2167000FAA55F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C86BADC26F2167200FAA55F /* UIButtonCAGradientLayer.app */,
+				1C86BADE26F2167200FAA55F /* UIButtonCAGradientLayerTests.xctest */,
+				1C86BAE026F2167200FAA55F /* UIButtonCAGradientLayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1CEA0C9324AB3019006C4C13 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +93,7 @@
 		1CEA0C9E24AB3019006C4C13 /* LayersGradient */ = {
 			isa = PBXGroup;
 			children = (
+				1C86BAD526F2167000FAA55F /* UIButtonCAGradientLayer.xcodeproj */,
 				1CEA0C9F24AB3019006C4C13 /* AppDelegate.swift */,
 				1CEA0CA124AB3019006C4C13 /* SceneDelegate.swift */,
 				1CEA0CA324AB3019006C4C13 /* ViewController.swift */,
@@ -115,12 +151,42 @@
 			mainGroup = 1CEA0C9324AB3019006C4C13;
 			productRefGroup = 1CEA0C9D24AB3019006C4C13 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1C86BAD626F2167000FAA55F /* Products */;
+					ProjectRef = 1C86BAD526F2167000FAA55F /* UIButtonCAGradientLayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1CEA0C9B24AB3019006C4C13 /* LayersGradient */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1C86BADC26F2167200FAA55F /* UIButtonCAGradientLayer.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UIButtonCAGradientLayer.app;
+			remoteRef = 1C86BADB26F2167200FAA55F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C86BADE26F2167200FAA55F /* UIButtonCAGradientLayerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIButtonCAGradientLayerTests.xctest;
+			remoteRef = 1C86BADD26F2167200FAA55F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C86BAE026F2167200FAA55F /* UIButtonCAGradientLayerUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIButtonCAGradientLayerUITests.xctest;
+			remoteRef = 1C86BADF26F2167200FAA55F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1CEA0C9A24AB3019006C4C13 /* Resources */ = {

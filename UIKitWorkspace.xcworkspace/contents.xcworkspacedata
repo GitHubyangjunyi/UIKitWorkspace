@@ -2,6 +2,36 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BuildConfiguration/BuildConfiguration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalizedString/LocalizedString.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITableViewCellExpand/UITableViewCellExpand.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UISearchController/UISearchController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIPageViewControllerSecond/UIPageViewControllerSecond.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIPageViewController/UIPageViewController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UserDefaultUse/UserDefaultUse.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UICollectionViewCompositionalLayout/UICollectionViewCompositionalLayout.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DiffableDataSourceSection/DiffableDataSourceSection.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DiffableDataSource/DiffableDataSource.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HitTest/HitTest.xcodeproj">
    </FileRef>
    <FileRef
@@ -90,15 +120,6 @@
    </FileRef>
    <FileRef
       location = "group:XibNest/XibNest.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:UIViewControllerXib/UIViewControllerXib.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:XibDALFactory/XibDALFactory.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SeparateUIAndLogic/SeparateUIAndLogic.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:README.md">

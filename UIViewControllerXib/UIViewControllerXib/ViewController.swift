@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
         let homeVC = HomeViewController()
-        //到这其实homeVC的viewDidLoad还没有被调用,这时候无法使用插座变量
         
         self.navigationController?.pushViewController(homeVC, animated: true)
         

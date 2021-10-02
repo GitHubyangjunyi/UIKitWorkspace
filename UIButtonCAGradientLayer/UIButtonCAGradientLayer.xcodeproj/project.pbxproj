@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C86BAA626F2166F00FAA55F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86BAA526F2166F00FAA55F /* AppDelegate.swift */; };
+		1C86BAA826F2166F00FAA55F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86BAA726F2166F00FAA55F /* SceneDelegate.swift */; };
+		1C86BAAA26F2166F00FAA55F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86BAA926F2166F00FAA55F /* ViewController.swift */; };
+		1C86BAAD26F2166F00FAA55F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C86BAAB26F2166F00FAA55F /* Main.storyboard */; };
+		1C86BAAF26F2167000FAA55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C86BAAE26F2167000FAA55F /* Assets.xcassets */; };
+		1C86BAB226F2167000FAA55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C86BAB026F2167000FAA55F /* LaunchScreen.storyboard */; };
+		1C86BABD26F2167000FAA55F /* UIButtonCAGradientLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86BABC26F2167000FAA55F /* UIButtonCAGradientLayerTests.swift */; };
+		1C86BAC826F2167000FAA55F /* UIButtonCAGradientLayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86BAC726F2167000FAA55F /* UIButtonCAGradientLayerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C86BAB926F2167000FAA55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C86BA9A26F2166F00FAA55F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C86BAA126F2166F00FAA55F;
+			remoteInfo = UIButtonCAGradientLayer;
+		};
+		1C86BAC426F2167000FAA55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C86BA9A26F2166F00FAA55F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C86BAA126F2166F00FAA55F;
+			remoteInfo = UIButtonCAGradientLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C86BAA226F2166F00FAA55F /* UIButtonCAGradientLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIButtonCAGradientLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C86BAA526F2166F00FAA55F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C86BAA726F2166F00FAA55F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C86BAA926F2166F00FAA55F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C86BAAC26F2166F00FAA55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C86BAAE26F2167000FAA55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C86BAB126F2167000FAA55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C86BAB326F2167000FAA55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C86BAB826F2167000FAA55F /* UIButtonCAGradientLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIButtonCAGradientLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C86BABC26F2167000FAA55F /* UIButtonCAGradientLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCAGradientLayerTests.swift; sourceTree = "<group>"; };
+		1C86BABE26F2167000FAA55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C86BAC326F2167000FAA55F /* UIButtonCAGradientLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIButtonCAGradientLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C86BAC726F2167000FAA55F /* UIButtonCAGradientLayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCAGradientLayerUITests.swift; sourceTree = "<group>"; };
+		1C86BAC926F2167000FAA55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C86BA9F26F2166F00FAA55F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C86BAB526F2167000FAA55F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C86BAC026F2167000FAA55F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C86BA9926F2166F00FAA55F = {
+			isa = PBXGroup;
+			children = (
+				1C86BAA426F2166F00FAA55F /* UIButtonCAGradientLayer */,
+				1C86BABB26F2167000FAA55F /* UIButtonCAGradientLayerTests */,
+				1C86BAC626F2167000FAA55F /* UIButtonCAGradientLayerUITests */,
+				1C86BAA326F2166F00FAA55F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C86BAA326F2166F00FAA55F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C86BAA226F2166F00FAA55F /* UIButtonCAGradientLayer.app */,
+				1C86BAB826F2167000FAA55F /* UIButtonCAGradientLayerTests.xctest */,
+				1C86BAC326F2167000FAA55F /* UIButtonCAGradientLayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C86BAA426F2166F00FAA55F /* UIButtonCAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1C86BAA526F2166F00FAA55F /* AppDelegate.swift */,
+				1C86BAA726F2166F00FAA55F /* SceneDelegate.swift */,
+				1C86BAA926F2166F00FAA55F /* ViewController.swift */,
+				1C86BAAB26F2166F00FAA55F /* Main.storyboard */,
+				1C86BAAE26F2167000FAA55F /* Assets.xcassets */,
+				1C86BAB026F2167000FAA55F /* LaunchScreen.storyboard */,
+				1C86BAB326F2167000FAA55F /* Info.plist */,
+			);
+			path = UIButtonCAGradientLayer;
+			sourceTree = "<group>";
+		};
+		1C86BABB26F2167000FAA55F /* UIButtonCAGradientLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C86BABC26F2167000FAA55F /* UIButtonCAGradientLayerTests.swift */,
+				1C86BABE26F2167000FAA55F /* Info.plist */,
+			);
+			path = UIButtonCAGradientLayerTests;
+			sourceTree = "<group>";
+		};
+		1C86BAC626F2167000FAA55F /* UIButtonCAGradientLayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C86BAC726F2167000FAA55F /* UIButtonCAGradientLayerUITests.swift */,
+				1C86BAC926F2167000FAA55F /* Info.plist */,
+			);
+			path = UIButtonCAGradientLayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C86BAA126F2166F00FAA55F /* UIButtonCAGradientLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C86BACC26F2167000FAA55F /* Build configuration list for PBXNativeTarget "UIButtonCAGradientLayer" */;
+			buildPhases = (
+				1C86BA9E26F2166F00FAA55F /* Sources */,
+				1C86BA9F26F2166F00FAA55F /* Frameworks */,
+				1C86BAA026F2166F00FAA55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIButtonCAGradientLayer;
+			productName = UIButtonCAGradientLayer;
+			productReference = 1C86BAA226F2166F00FAA55F /* UIButtonCAGradientLayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C86BAB726F2167000FAA55F /* UIButtonCAGradientLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C86BACF26F2167000FAA55F /* Build configuration list for PBXNativeTarget "UIButtonCAGradientLayerTests" */;
+			buildPhases = (
+				1C86BAB426F2167000FAA55F /* Sources */,
+				1C86BAB526F2167000FAA55F /* Frameworks */,
+				1C86BAB626F2167000FAA55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C86BABA26F2167000FAA55F /* PBXTargetDependency */,
+			);
+			name = UIButtonCAGradientLayerTests;
+			productName = UIButtonCAGradientLayerTests;
+			productReference = 1C86BAB826F2167000FAA55F /* UIButtonCAGradientLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C86BAC226F2167000FAA55F /* UIButtonCAGradientLayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C86BAD226F2167000FAA55F /* Build configuration list for PBXNativeTarget "UIButtonCAGradientLayerUITests" */;
+			buildPhases = (
+				1C86BABF26F2167000FAA55F /* Sources */,
+				1C86BAC026F2167000FAA55F /* Frameworks */,
+				1C86BAC126F2167000FAA55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C86BAC526F2167000FAA55F /* PBXTargetDependency */,
+			);
+			name = UIButtonCAGradientLayerUITests;
+			productName = UIButtonCAGradientLayerUITests;
+			productReference = 1C86BAC326F2167000FAA55F /* UIButtonCAGradientLayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C86BA9A26F2166F00FAA55F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1C86BAA126F2166F00FAA55F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1C86BAB726F2167000FAA55F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1C86BAA126F2166F00FAA55F;
+					};
+					1C86BAC226F2167000FAA55F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1C86BAA126F2166F00FAA55F;
+					};
+				};
+			};
+			buildConfigurationList = 1C86BA9D26F2166F00FAA55F /* Build configuration list for PBXProject "UIButtonCAGradientLayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C86BA9926F2166F00FAA55F;
+			productRefGroup = 1C86BAA326F2166F00FAA55F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C86BAA126F2166F00FAA55F /* UIButtonCAGradientLayer */,
+				1C86BAB726F2167000FAA55F /* UIButtonCAGradientLayerTests */,
+				1C86BAC226F2167000FAA55F /* UIButtonCAGradientLayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C86BAA026F2166F00FAA55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C86BAB226F2167000FAA55F /* LaunchScreen.storyboard in Resources */,
+				1C86BAAF26F2167000FAA55F /* Assets.xcassets in Resources */,
+				1C86BAAD26F2166F00FAA55F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C86BAB626F2167000FAA55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C86BAC126F2167000FAA55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C86BA9E26F2166F00FAA55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C86BAAA26F2166F00FAA55F /* ViewController.swift in Sources */,
+				1C86BAA626F2166F00FAA55F /* AppDelegate.swift in Sources */,
+				1C86BAA826F2166F00FAA55F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C86BAB426F2167000FAA55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C86BABD26F2167000FAA55F /* UIButtonCAGradientLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C86BABF26F2167000FAA55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C86BAC826F2167000FAA55F /* UIButtonCAGradientLayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C86BABA26F2167000FAA55F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C86BAA126F2166F00FAA55F /* UIButtonCAGradientLayer */;
+			targetProxy = 1C86BAB926F2167000FAA55F /* PBXContainerItemProxy */;
+		};
+		1C86BAC526F2167000FAA55F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C86BAA126F2166F00FAA55F /* UIButtonCAGradientLayer */;
+			targetProxy = 1C86BAC426F2167000FAA55F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C86BAAB26F2166F00FAA55F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C86BAAC26F2166F00FAA55F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C86BAB026F2167000FAA55F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C86BAB126F2167000FAA55F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C86BACA26F2167000FAA55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C86BACB26F2167000FAA55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C86BACD26F2167000FAA55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				INFOPLIST_FILE = UIButtonCAGradientLayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverbullet.UIButtonCAGradientLayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C86BACE26F2167000FAA55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				INFOPLIST_FILE = UIButtonCAGradientLayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverbullet.UIButtonCAGradientLayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C86BAD026F2167000FAA55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				INFOPLIST_FILE = UIButtonCAGradientLayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverbullet.UIButtonCAGradientLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIButtonCAGradientLayer.app/UIButtonCAGradientLayer";
+			};
+			name = Debug;
+		};
+		1C86BAD126F2167000FAA55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				INFOPLIST_FILE = UIButtonCAGradientLayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverbullet.UIButtonCAGradientLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIButtonCAGradientLayer.app/UIButtonCAGradientLayer";
+			};
+			name = Release;
+		};
+		1C86BAD326F2167000FAA55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				INFOPLIST_FILE = UIButtonCAGradientLayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverbullet.UIButtonCAGradientLayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UIButtonCAGradientLayer;
+			};
+			name = Debug;
+		};
+		1C86BAD426F2167000FAA55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				INFOPLIST_FILE = UIButtonCAGradientLayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverbullet.UIButtonCAGradientLayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UIButtonCAGradientLayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C86BA9D26F2166F00FAA55F /* Build configuration list for PBXProject "UIButtonCAGradientLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C86BACA26F2167000FAA55F /* Debug */,
+				1C86BACB26F2167000FAA55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C86BACC26F2167000FAA55F /* Build configuration list for PBXNativeTarget "UIButtonCAGradientLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C86BACD26F2167000FAA55F /* Debug */,
+				1C86BACE26F2167000FAA55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C86BACF26F2167000FAA55F /* Build configuration list for PBXNativeTarget "UIButtonCAGradientLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C86BAD026F2167000FAA55F /* Debug */,
+				1C86BAD126F2167000FAA55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C86BAD226F2167000FAA55F /* Build configuration list for PBXNativeTarget "UIButtonCAGradientLayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C86BAD326F2167000FAA55F /* Debug */,
+				1C86BAD426F2167000FAA55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C86BA9A26F2166F00FAA55F /* Project object */;
+}
